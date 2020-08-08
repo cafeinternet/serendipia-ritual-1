@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+</head>
+
+<body style="  background-image: url('wall.png');">
+
+  <div class="container">
+    <div class="row justify-content-start">
+      <div class="col-4">
+        <p class="h3 bg-light text-dark">En tu recorrido serán invocados cuatro objetos de poder. Cada uno contiene información que corresponde a un uso particular que en comunión componen un camino a otra realidad alimentado por saberes antiguos. </p>
+
+      </div>
+    
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-4">
+        <img src="" width="100%" id="myPicture" alt="some image">
+
+      </div>
+      <div class="col-4">
+        <p class="h4 bg-light text-dark">  Las runas son llaves que abren las puertas de lo posible, romperás los horizonte de la mente y las limitaciones del cuerpo a través de la sabiduría vegetal. 
+        </p>
+      </div>
+    </div>
+    <div class="row justify-content-end">
+      <div class="col-4">
+        <div class="h2  bg-light text-dark" id="descripcion">
+        </div>
+      </div>
+      <div class="col-4">
+        <img src="" width="100%" id="plantas" alt="some image">
+
+      </div>
+    </div>
+    <div class="row justify-content-around">
+     
+      <div class="col-4">
+        <audio id="audio" src="" type="audio/x-m4a" controls autoplay> </audio> 
+
+      </div>
+    </div>
+    <div class="row justify-content-between">
+      <div class="col-4">
+        <img src="" width="140%" id="hongo" alt="some image">
+
+      </div>
+      <div class="col-4">
+        <div class="h2 bg-light text-dark "id="hongodes"></div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        
+      </div>
+      <div class="col-12">
+        <iframe  id="elementos" width="100% " height="612" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      </div>
+      <div class="col">
+       
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+ <script>
+window.onload = choosePic;
+
+var myPix = new Array("./runas/Runa1.png","./runas/Runa2.png","./runas/Runa3.png","./runas/Runa4.png","./runas/Runa5.png","./runas/Runa6.png","./runas/Runa7.png","./runas/Runa8.png","./runas/Runa9.png");
+var planta = new Array("./planta/planta1.jpg","./planta/planta2.jpg","./planta/planta3.jpg","./planta/planta4.jpg","./planta/planta5.jpg","./planta/planta6.jpg","./planta/planta7.jpg","./planta/planta8.jpg","./planta/planta9.jpg");
+var hongo = new Array("./fotos/hongo1.JPG", "./fotos/hongo2.JPG","./fotos/hongo3.JPG","./fotos/hongo4.JPG","./fotos/hongo5.JPG","./fotos/hongo6.JPG","./fotos/hongo7.JPG","./fotos/hongo8.JPG","./fotos/hongo9.JPG","./fotos/hongo10.JPG","./fotos/hongo11.JPG","./fotos/hongo12.JPG")
+var des_plan= new Array("<p>Planta complementaria, acompañamiento elemental. <br>Circulación y limpieza.<br>Llave de la sensibilidad","<p>Alegría, empatía y comunión <br>Autocontrol, poder y claridad mental  <br> Llave de la divinidad</p>", "<p>Estado de hipnosis (cercanía al inconsciente) <br> Plenitud, claridad y presente <br> Llave onírica</p>","<p>Motor del cuerpo y de la mente <br> Energía y movimiento <br> Llave del corazón</p>","<p> Concentración y recepción de la mente <br>  Conexión del cuerpo con todos los cuerpo <br> Llave de la existencia</p>","<p>  Persistencia y resistencia <br>  Liberación del dolor, elocuencia y energía <br> Llave de la fuerza</p> ","<p>Hipersensibilidad y conexión latente <br> Memoria lúcida e inconsciente<br> Llave del espíritu </p>","<p> Cuerpo ausente, acontecimientos del inconsciente <br> Acercamientos oníricos y estados idílicos de lo intangible<br> Llave de la mente </p>")
+var hongo_des= new Array ("<p> <h3> Bosque</h3> <br>En el Bosque con su silencio y sabiduría, reposa la máquina, <br>permite penetrar en sus tierras, los anhelos buscados <br>la colaboración entrelazadas en sus raíces. <br>La quietud es otra velocidad, la calma que lleva el respirar. <br></p>","<p>  <h3>Pastizal</h3>   <br> En un pastizal, el olor a vacas, en sus largas hierbas, <br>entre estiércol y esporas que se levantan con el viendo, <br>danzan las palabras lanzadas al aire, caen en la máquina <br></p>","<p> <h3>Jardín </h3><br> En un jardín junto a las hortalizas y las flores<br> en su belleza con anhelos de libertad, la máquina acompaña <br>los compromisos del respeto y colaboración. <br> Existe una interconexión más allá de nuestro entender. </p> " )
+var audio = new Array ("./audios/11.m4a","./audios/12.m4a","./audios/13.m4a","./audios/14.m4a","./audios/15.m4a","./audios/16.m4a","./audios/17.m4a","./audios/18.m4a","./audios/19.m4a","./audios/110.m4a", "./audios/111.m4a", "./audios/112.m4a", "./audios/113.m4a")
+var elementos = new Array ( "https://www.youtube.com/embed/-_fK7HQGrO4", "https://www.youtube.com/embed/x_dn2cF0IvE","https://www.youtube.com/embed/2tU35kXLnW0", "https://www.youtube.com/embed/VcZWH458zAQ")
+function choosePic() {
+     var randomNum = Math.floor(Math.random() * myPix.length);
+     var randomNum1 = Math.floor(Math.random() * planta.length);
+     var randomNum2 = Math.floor(Math.random() * hongo.length);
+     var randomNum3 = Math.floor(Math.random() * des_plan.length);
+     var randomNum4 = Math.floor(Math.random() * hongo_des.length);
+     var randomNum5 = Math.floor(Math.random() * audio.length);
+     var randomNum6 = Math.floor(Math.random() * elementos.length);
+
+
+
+
+
+     document.getElementById("myPicture").src = myPix[randomNum];
+     document.getElementById("plantas").src = planta[randomNum1];
+     document.getElementById("hongo").src = hongo[randomNum2];
+     document.getElementById("descripcion").innerHTML = des_plan[randomNum3];
+     document.getElementById("hongodes").innerHTML = hongo_des[randomNum4];
+     document.getElementById("audio").src = audio[randomNum5];
+     document.getElementById("elementos").src = elementos[randomNum6];}
+
+
+
+
+
+
+
+     
+      </script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+body
+{
+    margin: 0;
+    border: 0;
+    padding: 0;
+  background-image: url('wall.png');
+}
+
+a{
+    
+}
+
+h3{
+    text-align: center;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+.center-div
+{
+font-family:'Times New Roman', Times, serif;
+font-size: 28px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 900px;
+  height: 390px;
+  background-color: #ccc;
+  border-radius: 3px;
+ border: 8px;
+  padding: 5px;
+  border-style: dashed;
+   text-align: justify;
+
+}
+.center-div-1
+{
+font-family:'Times New Roman', Times, serif;
+font-size: 19px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 900px;
+  height: 690px;
+  background-color: #ccc;
+  border-radius: 3px;
+ border: 8px;
+  padding: 5px;
+  border-style: dashed;
+   text-align: justify;
+
+}
+
+.center-div .ritual{
+  padding-left: 290px;
+    text-align: center;
+    letter-spacing: 10px;
+
+}
+
+img{
+    width: 150px;
+    height: 150px;
+}
+
+
+#sumas {
+    background-color: yellow;
+    padding: 20px;
+    display: none;
+  }
+    
+  .suma:hover + #sumas{
+    display: block;
+  }
+
+
+  
+  #sumas1 {
+    background-color: yellow;
+    padding: 20px;
+    display: none;
+  }
+    
+  .suma1:hover + #sumas1{
+    display: block;
+  }
+
+  
+
